@@ -1,0 +1,5 @@
+A simple file changes monitor
+usage: monitor.sh directory "command"
+
+examples:
+	./monitor /path/to/src "restart-server"

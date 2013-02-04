@@ -1,0 +1,6 @@
+Monitor streams for specific byte sequences and react
+usage: monitor.sh keyword command
+
+examples:
+	tail -f /var/log/access.log | ./monitor.sh "admin" "./alertme.sh"
+	ssh me@server "tail -f /var/log/error.log" | ./monitor.sh "invalid" 'echo "Alert!" | mail ...'
