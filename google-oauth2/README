@@ -1,0 +1,9 @@
+A simple cURL OAuth2 authenticator
+
+Depends on Python's built-in json module to prettify output
+
+Usage:
+	`./google-oauth2.sh create` - authenticates a user
+	`./google-oauth2.sh refresh` <token> - gets a new token
+
+Set `CLIENT_ID` and `CLIENT_SECRET` and `SCOPE`
