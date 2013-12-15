@@ -17,10 +17,8 @@ Content-Type: application/json; charset=UTF-8
 
 --$BOUNDARY
 Content-Type: $MIME_TYPE
-
 " \
 && cat $2 && echo "
-
 --$BOUNDARY--" ) \
 	| curl -v "https://www.googleapis.com/upload/drive/v2/files/?uploadType=multipart" \
 	--header "Authorization: Bearer $ACCESS_TOKEN" \
