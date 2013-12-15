@@ -1,0 +1,8 @@
+Allows one to upload a file to Google Drive using nothing but cURL.
+
+Usage:
+	upload.sh <access_token> <file> [title] [path] [mime]
+
+The `path` argument has to be an ID, not a name.
+The ID of a folder on Google Drive can be retrieved from its URL.
+Always double check your uploads, since corruption may happen.
