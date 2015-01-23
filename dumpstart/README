@@ -1,0 +1,7 @@
+Simply restarting a service (a.k.a "have you tried switching it off and on again") is not a good solution. This little script generates postmortems for later analysis before restarting.
+
+Set `PROCESS`, `SERVICE` and `LOGFILE` to do a process/thread coredump, a logfile dump and a service restart. These can be used separately. Example:
+
+PROCESS=nginx SERVICE=nginx LOGFILE="/var/log/nginx/error.log /var/log/access.log" ./dumpstart.sh
+PROCESS=mysqld SERVICE=mysql LOGFILE=/var/log/mysql.err ./dumpstart.sh
+PROCESS=php5-fpm SERVICE=php5-fpm LOGFILE=/var/log/php5-fpm.log ./dumpstart.sh
