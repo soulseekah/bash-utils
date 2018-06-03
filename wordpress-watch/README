@@ -1,0 +1,2 @@
+WordPress now uses Grunt to build the core JavaScript files for for unit tests, etc. I hate this.
+`grunt build` is slow (30+ seconds) and pointless for a single changed PHP file. This watch script copies the modified file and runs phpunit with the needed arguments. Super fast, clear watch code.
